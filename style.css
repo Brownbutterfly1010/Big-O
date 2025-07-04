@@ -62,14 +62,14 @@ h1 {
   .blocks {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    gap: 10px;
+    gap: 5px;
     max-width: 800px;
     margin: auto;
   }
   
  .blocks img {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 10px;
     object-fit: cover;
     display: block;
   }
