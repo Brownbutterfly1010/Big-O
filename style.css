@@ -1,0 +1,63 @@
+  body {
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+
+  }
+
+  .Socials{
+    padding:10px;
+    background-color: #924a38b1;
+    border-radius: 80rem;
+    display: inline-block;
+}
+
+.Socials:hover{
+    background-color: #52291eb1;
+}
+
+.navgation{
+    position: relative;
+    padding: 10px;
+}
+
+  h1{
+    position: relative;
+    font-size: 50px;
+    margin:40px ;
+    text-align: center;
+  }
+
+  .letter-o{
+    width: 70px; 
+    position: absolute;
+  }
+
+  .graphic{
+    text-align: center;
+    padding: 10px;
+    background-color:#924a38b1;
+
+  }
+  
+  .graphic img{
+    width: 80px;
+   
+  }
+  
+  .blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+ .blocks img {
+    width: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    display: block;
+  }
