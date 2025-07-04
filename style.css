@@ -1,4 +1,4 @@
-  body {
+body {
     background-image: url("background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,22 +19,34 @@
 }
 
 .navgation{
-    position: relative;
     padding: 10px;
 }
-
-  h1{
-    position: relative;
-    font-size: 50px;
-    margin:40px ;
-    text-align: center;
-  }
-
+.mainpage{
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  font-size: 50px;
+  line-height: 1.2;
+  max-width: 100%;
+}
   .letter-o{
     width: 70px; 
     position: absolute;
   }
-
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  
+  .letter-o {
+    display: inline-block;
+    width: 70px;
+    position: relative;
+    top: 5px;
+  }
+  
   .graphic{
     text-align: center;
     padding: 10px;
