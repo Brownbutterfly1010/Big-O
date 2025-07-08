@@ -105,26 +105,18 @@ h1 {
     object-fit: cover;
   }
 
-.scrollbar{
-   text-align: center;
-   display:flex;
-   flex-shrink: 0;
-   padding: 10px;
-   scroll-behavior: smooth;
-  gap: 40px;
-}
-
-.scrollbar,img{
-  max-width: 300px;
-  border-radius: 20px;
+  .scrollbar {
+    display: flex;
+    scroll-behavior: smooth;
+    gap: 40px;
+    padding: 10px;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
   
-}
-
-.scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.strollbar {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;     
-}
-
+  .scrollbar img {
+    max-width: 300px;
+    border-radius: 20px;
+    flex-shrink: 0;
+  }
+ 
