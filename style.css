@@ -27,7 +27,9 @@
     border-radius: 80rem;
     display: inline-block;
 }
-
+button{
+  text color: black;
+}
 .socials a{
   text color: black;
 }
@@ -67,7 +69,7 @@ h1 {
   padding: 2px 0;
  z-index: 1000;
 }
-see
+
 .heading {
 padding: 10px;
 }
