@@ -23,16 +23,12 @@
 
   .Socials{
     padding:10px;
-    color: white;
+    color: black;
+    background-color:#b38071;
     border-radius: 80rem;
     display: inline-block;
 }
-button{
-  text color: black;
-}
-.socials a{
-  text color: black;
-}
+
 
 
 .Socials:hover{
