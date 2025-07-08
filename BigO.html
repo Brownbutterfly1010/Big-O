@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Big O</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navgation">
+    <button class="Socials" onclick="window.location.href='Social.html'">
+      Connect with us
+    </button>
+  </nav>
+
+  <!-- Header -->
+  <main class="mainpage">
+    <h1>The Big <img src="O.png" alt="O" class="letter-o"/></h1>
+  </main>
+
+  <br>
+
+  <!-- Block Grid -->
+  <div class="blocks">
+    <img src="1.jpg"/>
+    <img src="2.jpg"/>
+    <img src="3.jpg"/>
+    <img src="4.jpg"/>
+    <img src="5.jpg"/>
+    <img src="6.jpg"/>
+    <img src="7.jpg"/>
+    <img src="8.jpg"/>
+    <img src="9.jpg"/>
+    <img src="10.jpg"/>
+    <img src="11.jpg"/>
+    <img src="12.jpg"/>
+  </div>
+
+
+
+  <br>
+
+  <div class="style">
+  <h2>Formal Reimagined</h2>
+</div>
+
+  <!-- Horizontal Scroll Section -->
+  <div class="scroll-wrapper">
+    <button class="nav left" id="scroll-left">←</button>
+    <button class="nav right" id="scroll-right">→</button>
+  
+    <div class="scrollbar" id="storyScroll">
+      <div>
+        <div data-aos="fade-up">
+        <img src="soft.jpeg">
+        <p>Thando</p>
+      </div>
+      </div>
+      <div>
+        <div data-aos="fade-left">
+        <img src="loft.jpeg">
+        <p>Bonolo & Blessing</p>
+      </div>
+      </div>
+      <div>
+<div data-aos="zoom-in-left">
+        <img src="craft.jpeg">
+        <p>Karabo</p>
+      </div>
+      </div>
+      <div>
+        <div data-aos="zoom-in">
+        <img src="light.jpeg">
+        <p>Tebogo</p>
+      </div>
+      </div>
+      <div>
+        <div data-aos="fade-up">
+        <img src="sunny.jpeg">
+        <p>Mei</p>
+        </div>
+      </div>
+      <div data-aos="fade-left">
+        <img src="winter.jpeg">
+        <p>Mandy</p>
+    </div> 
+  </div>
+  <section class="about">
+    <div class="about-container">
+      <img src="Group.jpg" alt="Our Team" class="about-image">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>We’re a group of friends —Wandy(Photographer), Thando (Software devloper) and Thando(stylist), — who started this as students in a business school that pushed a strict formal dress code. But we weren’t about to let that limit our expression. Instead of sticking to the usual suit-and-tie look, we created our own version of formal — bold, stylish, and unapologetically us.
+          </p>
+        <p>This is more than a fashion project. It’s a blueprint. A collective. A celebration of individuality in a world that keeps trying to dress us the same.
+         </p>
+      </div>
+    </div>
+  </section>
+  
+  <img src="Camera.png" class="camera">
+  
+
+  <!-- Footer -->
+  <footer class="graphic">
+    <img src="theend.gif" alt="The End"/>
+  </footer>
+
+  <!-- JS: AOS + Scroll -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+      const scrollContainer = document.getElementById("storyScroll");
+      const scrollLeftBtn = document.getElementById("scroll-left");
+      const scrollRightBtn = document.getElementById("scroll-right");
+    
+      scrollLeftBtn.addEventListener("click", () => {
+        scrollContainer.scrollBy({ left: -300, behavior: "smooth" });
+      });
+    
+      scrollRightBtn.addEventListener("click", () => {
+        scrollContainer.scrollBy({ left: 300, behavior: "smooth" });
+      });
+    </script>
+    
+
+  
+  </script>
+
+</body>
+</html>
