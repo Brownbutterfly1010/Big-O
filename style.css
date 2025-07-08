@@ -45,6 +45,7 @@
   position: sticky;
   top: 0;
   background-color: white;
+  padding: 8px 0;
  z-index: 1000;
 }
 h1 {
@@ -93,7 +94,7 @@ padding: 10px;
   .graphic{
     text-align: center;
     padding: 10px;
-    background-color:#924a38b1;
+    background-color:#fffbf5;
     inline-size: auto;
 
   }
