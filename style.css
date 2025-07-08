@@ -5,6 +5,9 @@
     background-repeat: no-repeat;
     background-position: center;
     font-family: sans-serif;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
   
 
   }
@@ -15,6 +18,11 @@
     border-radius: 80rem;
     display: inline-block;
 }
+
+.socials a{
+  text color: black;
+}
+
 
 .Socials:hover{
     background-color: #52291eb1;
@@ -97,15 +105,26 @@ h1 {
     object-fit: cover;
   }
 
-.about{
+.scrollbar{
    text-align: center;
    display:flex;
- ;
+   flex-shrink: 0;
+   padding: 10px;
+   scroll-behavior: smooth;
   gap: 40px;
 }
 
-.about,img{
+.scrollbar,img{
   max-width: 300px;
   border-radius: 20px;
   
 }
+
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.strollbar {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
+}
+
