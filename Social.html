@@ -10,22 +10,89 @@
 
 </head>
 
-
 <body>
+  
+<style>
+  .mainpage {
+    position: relative;
+    z-index: 2;
+    margin-top: -60px; 
+    text-align: center;
+  }
+
+  
+  
+  
+  .heading {
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.85);
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .microphone {
+    width: 80px;
+  }
+  
+  
+</style>
+
+<header class="banner">
+  <img src="vision.jpeg" alt="Banner Image" />
+</header>
+
+
+
 
 <div class="mainpage">
 <h1 class="heading">Connect with us</h1>
 <img src="sociallogo.png" class="microphone"/>
 </div>
 
+<section class="contact-island">
+
+  <div class="contact-columns">
+    <div class="org-socials">
+      <h3>Follow Us</h3>
+      <a href="https://www.instagram.com/thebig.o.asis?utm_source=qr&igsh=MW5ya24xd2k5MTQzZQ==
+      " target="_blank" rel="noopener noreferrer">Big O Instagram</a><br/>
+      <a href="https://chat.whatsapp.com/EWfAKRJgm6a5MxFQhVOsFt?mode=ac_c
 
 
+      " target="_blank" rel="noopener noreferrer">Big O WhatsApp</a>
+    </div>
 
-
+    <div class="developer-profile">
+      <h3>Thando — Developer</h3>
+      <p>Software Developer & Designer</p>
+      <a href="https://www.linkedin.com/in/thando-shongwe-7b7768306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+ " target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+    </div>
+  </div>
+</section>
 
 
 </body>
 
+
+<script>
+  document.addEventListener('contextmenu', e => {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+
+  setInterval(() => {
+    if (window.outerWidth - window.innerWidth > 100 || 
+        window.outerHeight - window.innerHeight > 100) {
+      document.body.innerHTML = ""; // Or redirect
+      alert("DevTools blocked.");
+    }
+  }, 1000);
+  
+</script>
 
 
 </html>

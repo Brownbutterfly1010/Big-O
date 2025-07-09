@@ -14,6 +14,7 @@
 
 <body>
 
+
   <!-- Navigation -->
   <nav class="navgation">
      <button class="Socials" onclick="window.location.href='Social.html'">
@@ -47,10 +48,11 @@
 
 
   <br>
-
+  <div class="sticky-wrapper">
   <div class="sticky">
   <h2>Formal Reimagined</h2>
 </div>
+
 
   <!-- Horizontal Scroll Section -->
   <div class="scroll-wrapper">
@@ -92,14 +94,27 @@
         <img src="winter.jpeg">
         <p>Mandy</p>
     </div> 
+    <div data-aos="zoom-left">
+      <img src="autumn.jpeg">
+      <p>Karabo & Geo</p>
+    </div>
+    <div data-aos="zoom-in">
+      <img src="fullness.jpeg">
+      <p>Karabo</p>
+    </div>
+    <div data-aos="fade-up">
+      <img src="flower.jpeg">
+      <p>Buhle</p>
+      </div>
   </div>
   <section class="about">
     <div class="about-container">
       <img src="IMG_0738.jpeg" alt="Our Team" class="about-image">
       <div class="about-text">
         <h2>About Us</h2>
-        <p>We’re a group of friends —Wandy(Photographer), Thando (Software devloper) and Thando(stylist), — who started this as students in a business school that pushed a strict formal dress code. But we weren’t about to let that limit our expression. Instead of sticking to the usual suit-and-tie look, we created our own version of formal — bold, stylish, and unapologetically us.
+        <p>We’re a group of friends —Wandy Ndlovu, Thando Shongwe and Thando Ntshalintshail, — who started this as students in a business school that pushed a strict formal dress code. But we weren’t about to let that limit our expression. Instead of sticking to the usual suit-and-tie look, we created our own version of formal — bold, stylish, and unapologetically us.
           </p>
+          <p>One of us builds in code. One of us sees through the lens. One of us hears the world in melodies. Different skills, different backgrounds, different ways of expressing ourselves — but somehow, it clicks.</p>
         <p>This is more than a fashion project. It’s a blueprint. A collective. A celebration of individuality in a world that keeps trying to dress us the same.
          </p>
       </div>
@@ -107,12 +122,52 @@
   </section>
   
   <img src="Camera.png" class="camera">
-  
 <br>
+
+<section class="team-section">
+  <h2>Meet the Team</h2>
+  <div class="team-cards">
+    <div class="team-member">
+      <img src="thando.jpeg" alt="Thando"/>
+      <h3>Thando</h3>
+      <p>Software Developer</p>
+    </div>
+    <div class="team-member">
+      <img src="wandy.jpeg" alt="Wandy" />
+      <h3>Wandy</h3>
+      <p>Photographer</p>
+    </div>
+    <div class="team-member">
+      <img src="mrh.jpeg" alt="Ifyou" />
+      <h3>Thando (Mr H)</h3>
+      <p>Stylist/Artist</p>
+    </div>
+  </div>
+</section>
+
+
+
+<div data-aos="zoom-in" class="future-section">
+  <img src="ice.jpeg" alt="Future" class="future-image" />
+  <div class="future-text">
+    <h2>What’s Next</h2>
+    <p>We will continue styling the world and exchanging collective ideas, blending creativity with individuality to redefine formal fashion. Our journey is about pushing boundaries, inspiring confidence, and building a community where everyone can express their unique style boldly and authentically. Together with our friends and collaborators, we aim to transform the way people perceive formal wear — making it vibrant, inclusive, and truly personal. This is just the beginning, and we’re excited to grow, innovate, and shape the future of fashion, one look at a time.</p>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <p>© 2025 The Big O. All rights reserved. Designed and developed by Thando Shongwe.</p>
+</footer>
+  
+</section>
+
+</div>
   <!-- Footer -->
   <footer class="graphic">
     <img src="theend.gif" alt="The End"/>
   </footer>
+</div>
 
   <!-- JS: AOS + Scroll -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -130,9 +185,19 @@
       scrollRightBtn.addEventListener("click", () => {
         scrollContainer.scrollBy({ left: 300, behavior: "smooth" });
       });
-    </script>
-    
-
+      document.addEventListener('contextmenu', e => {
+        if (e.target.tagName === 'IMG') {
+          e.preventDefault();
+        }
+      });
+      
+      setInterval(() => {
+        if (window.outerWidth - window.innerWidth > 100 || 
+            window.outerHeight - window.innerHeight > 100) {
+          document.body.innerHTML = ""; // Or redirect
+          alert("DevTools blocked.");
+        }
+      }, 1000);
   
   </script>
 
